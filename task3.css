@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    color: white;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+header h1{
+    color: darkblue;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#tk-form{
+    display: flex;
+}
+input,button{
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: none;
+}
+#tk-input{
+    flex:1 1 0%;
+    color: black;
+    background-color:dark gray;
+    border-radius: 1rem;
+    font-size: 1.25rem; 
+    padding: 10px;
+    margin-right: 10px;   
+}
+#tk-input::placeholder{
+    color: grey;
+    font-size: 1.8rem;
+}
+#tk-submit{
+    color: blue;
+    background-color: yellow;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#tk-submit:hover{
+    color: white;
+    background-color: black;
+}
+main{
+    flex: 1 1 0%;
+    width:100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.tk-list{
+ padding: 1rem;
+}
+.tk-list h2{
+    color:darkblue;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#tasks .task .content{
+    color: black;
+    flex: 1 1 0%;
+    font-size: 1.22rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px; 
+}
+#tasks .task .content .text{
+    display: block;
+    color:black;
+    font-size: 1.22rem;
+    width: 100%;  
+}
+#tasks .task .content .text:not(:read-only){
+    color: brown;
+}
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    color: blue;
+    background-color: yellow;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.task .actions button:hover{
+    color: white;
+    background-color: black;
+}
